@@ -1,0 +1,74 @@
+Order: 2
+Matrix A: 
+2 1 
+1 5 
+
+Matrix B: 
+6 7 
+4 3 
+
+Matrix A * Matrix B: 
+16 17 
+26 22 
+
+----------------------
+Order: 4
+Matrix A: 
+3 2 1 4 
+-1 2 0 1 
+2 3 -1 -2 
+5 1 1 0 
+
+Matrix B: 
+-1 2 -1 0 
+3 -1 0 2 
+-4 0 -3 1 
+0 -2 1 2 
+
+Matrix A * Matrix B: 
+-1 -4 -2 13 
+7 -6 2 6 
+11 5 -1 1 
+-6 9 -8 3 
+
+----------------------
+Order: 8
+Matrix A: 
+1 0 1 2 0 -1 -1 -1 
+-1 1 -1 1 2 0 0 3 
+1 -1 2 -3 -1 1 1 0 
+0 2 3 2 1 0 -1 -2 
+2 3 -1 0 -1 0 -1 0 
+1 2 2 1 0 1 1 2 
+3 -1 0 2 2 2 2 1 
+2 -2 1 -3 3 0 1 2 
+
+Matrix B: 
+1 0 1 2 0 -1 -1 -1 
+-1 1 -1 1 2 0 0 3 
+1 -1 2 -3 -1 1 1 0 
+0 2 3 2 1 0 -1 -2 
+2 3 -1 0 -1 0 -1 0 
+1 2 2 1 0 1 1 2 
+3 -1 0 2 2 2 2 1 
+2 -2 1 -3 3 0 1 2 
+
+Matrix A * Matrix B: 
+-4 4 6 3 -4 -3 -6 -10 
+7 4 0 -5 11 0 0 8 
+6 -11 0 -8 -4 4 8 5 
+-4 11 7 1 -6 1 -4 -3 
+-7 2 -2 8 6 -5 -4 6 
+9 -1 10 -3 11 4 5 10 
+18 9 13 12 5 3 0 -2 
+18 -5 -4 -11 -3 1 3 3 
+
+----------------------
+----------------------Algorithm Running Time--------------------------
+Matrix Order            Algorithm                   Time In Nanosecond
+     2                  Regular Multiplication      30917
+     2                  Strassen's Method           834184
+     4                  Regular Multiplication      23270
+     4                  Strassen's Method           197038
+     8                  Regular Multiplication      80593
+     8                  Strassen's Method           1519230
